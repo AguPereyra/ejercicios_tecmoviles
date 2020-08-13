@@ -30,4 +30,12 @@
         android:layout_margin="@dimen/fab_margin"
         app:srcCompat="@android:drawable/ic_dialog_email" />
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="229dp"
+        android:clickable="true"
+        android:layout_gravity="bottom"
+        app:srcCompat="@android:drawable/ic_delete" />
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -8,6 +8,7 @@ import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
 import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
@@ -18,8 +19,7 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(findViewById(R.id.toolbar))
 
         findViewById<FloatingActionButton>(R.id.fab).setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show()
+            Snackbar.make(view, "Bonjour mon ami :<)", Snackbar.LENGTH_LONG).show()
         }
 
         // Mostrar la toast en creacion o pausa
@@ -27,6 +27,14 @@ class MainActivity : AppCompatActivity() {
 
         // Establecer el titulo de la activity
         supportActionBar?.setTitle("Un titulazo")
+
+        // Estoy seguro que deberia ir en otro lado esto, pero no me anda en fragment
+        /*val switch1: View = findViewById(R.id.switch1)
+        switch1.setOnClickListener{view ->
+            Snackbar.make(view, "Un gran snackbar, hurra :|", Snackbar.LENGTH_LONG)
+                .setAction("Action", null)
+                .show()
+        }*/
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
