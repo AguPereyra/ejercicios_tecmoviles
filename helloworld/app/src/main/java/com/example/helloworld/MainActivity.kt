@@ -2,11 +2,13 @@ package com.example.helloworld
 
 import android.os.Bundle
 import android.os.PersistableBundle
+import android.view.Gravity
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
 
@@ -19,6 +21,9 @@ class MainActivity : AppCompatActivity() {
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show()
         }
+
+        // Mostrar la toast en creacion o pausa
+        showTheToast()
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -49,7 +54,8 @@ class MainActivity : AppCompatActivity() {
 
     override fun onPause() {
         super.onPause()
-        //TODO: Add stuff
+        // Mostrar la toast en creacion o pausa
+        showTheToast()
     }
 
     override fun onStop() {
@@ -75,5 +81,12 @@ class MainActivity : AppCompatActivity() {
     override fun onRestoreInstanceState(savedInstanceState: Bundle) {
         super.onRestoreInstanceState(savedInstanceState)
         //TODO: Add something
+    }
+
+    fun showTheToast() {
+        val theToast = Toast.makeText(baseContext, "Que talka", Toast.LENGTH_LONG)
+        theToast.setGravity(Gravity.TOP, 0, 0)
+        theToast.show()
+
     }
 }
