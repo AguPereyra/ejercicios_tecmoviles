@@ -27,9 +27,20 @@
 
     <ImageView
         android:id="@+id/imageView"
+        android:layout_width="329dp"
+        android:layout_height="599dp"
+        app:layout_constraintEnd_toEndOf="@+id/button_second"
+        app:layout_constraintStart_toStartOf="@+id/button_second"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/backgrounds/scenic" />
+
+    <Switch
+        android:id="@+id/switch1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-31dp"
-        tools:src="@tools:sample/backgrounds/scenic" />
+        android:text="@string/UselessSwitch"
+        app:layout_constraintBottom_toTopOf="@+id/textview_second"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
