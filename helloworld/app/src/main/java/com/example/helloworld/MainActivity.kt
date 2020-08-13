@@ -24,6 +24,9 @@ class MainActivity : AppCompatActivity() {
 
         // Mostrar la toast en creacion o pausa
         showTheToast()
+
+        // Establecer el titulo de la activity
+        supportActionBar?.setTitle("Un titulazo")
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
