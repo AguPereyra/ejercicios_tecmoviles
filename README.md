@@ -3,6 +3,7 @@ Repositorio que contiene las actividades hechas durante las clases de la materia
 
 ## TODO
 * Ejercicio 1: Solucionar problemas con imágen que no se muestra, toast que no sube y app que se rompe al insertar acción para snackbar del segundo fragmento en el onCreate de la activity.
-## Author
 
+
+## Author
 PEREYRA, Agustín Ezequiel.
