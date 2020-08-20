@@ -13,6 +13,8 @@ class MainActivity : AppCompatActivity() {
 
         // Show toast on creation and pause
         showLaTostada()
+        // Manually set title
+        supportActionBar?.setTitle(R.string.app_title)
     }
 
     override fun onPause() {
