@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <!--Colours partially from -> https://www.color-hex.com/color-palette/96303-->
-    <color name="colorPrimary">#dade83</color>
-    <color name="colorPrimaryDark">#a29800</color>
-    <color name="colorAccent">#dff500</color>
-</resources>

@@ -24,7 +24,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showLaTostada() {
-        val laTostada = Toast.makeText(baseContext, R.string.la_tostada, Toast.LENGTH_LONG)
+        val laTostada = Toast.makeText(applicationContext, R.string.la_tostada, Toast.LENGTH_LONG)
+        laTostada.setGravity(Gravity.TOP ,400,0)
         laTostada.show()
+
     }
 }
