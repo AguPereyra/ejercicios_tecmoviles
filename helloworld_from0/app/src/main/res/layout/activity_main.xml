@@ -8,9 +8,21 @@
     android:orientation="vertical"
     android:gravity="center">
 
+    <ImageView
+        android:layout_width="@dimen/main_img_width"
+        android:layout_height="@dimen/main_img_height"
+        android:src="@drawable/ic_app_logo"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/main_text_size"
+        android:text="@string/main_msg"/>
+
     <Button
         android:id="@+id/main_button"
         android:text="@string/main_button"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"/>
 </LinearLayout>
