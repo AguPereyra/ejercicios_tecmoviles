@@ -16,6 +16,7 @@
         android:textSize="@dimen/middle_size_text"/>
 
     <Button
+        android:id="@+id/share_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/email_btn"

@@ -7,4 +7,7 @@
     <string name="submit_btn">Ingresar</string>
     <string name="welcome_user_txt">¡Bienvenido %1$s!</string>
     <string name="email_btn">Mandar mail</string>
+    <string name="email_body"><p>Un mail automático.</p></string>
+    <string name="email_sendto">random@mail.com</string>
+    <string name="sharing_intent_txt">Compartir usando...</string>
 </resources>
