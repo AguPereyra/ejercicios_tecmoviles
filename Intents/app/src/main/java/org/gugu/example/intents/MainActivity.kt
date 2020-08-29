@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
@@ -24,7 +25,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun login() {
+        // Get Username
+        val editTextUsername = findViewById<EditText>(R.id.login_user)
+        val username = editTextUsername.text
         val secondPageIntent = Intent(this, SecondActivity::class.java)
+        secondPageIntent.putExtra("USERNAME", username)
         startActivity(secondPageIntent)
     }
 }

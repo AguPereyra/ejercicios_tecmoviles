@@ -5,6 +5,6 @@
     <string name="user_login">Usuario</string>
     <string name="passwd_login">Contraseña</string>
     <string name="submit_btn">Ingresar</string>
-    <string name="welcome_user_txt">¡Bienvenido usuario!</string>
+    <string name="welcome_user_txt">¡Bienvenido %1$s!</string>
     <string name="email_btn">Mandar mail</string>
 </resources>
