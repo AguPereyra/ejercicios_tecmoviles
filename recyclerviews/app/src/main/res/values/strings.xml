@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">recyclerviews</string>
+    <string name="firstVal">Uno</string>
+    <string name="secondVal">Dos</string>
+    <string name="thirdVal">Tres</string>
+    <string name="fourthVal">Cuatro</string>
+    <string name="fifthVal">Cinco</string>
+    <string name="sixthVal">Seis</string>
+    <string name="seventhVal">Siete</string>
+    <string name="eighthVal">Ocho</string>
+    <string name="ninthVal">Nueve</string>
+</resources>
