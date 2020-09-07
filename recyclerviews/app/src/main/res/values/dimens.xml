@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="paddingCard">4dp</dimen>
+    <dimen name="cardHeight">62dp</dimen>
+    <dimen name="cardMargins">8dp</dimen>
+</resources>

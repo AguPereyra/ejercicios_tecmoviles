@@ -18,25 +18,21 @@ class MainActivity : AppCompatActivity() {
         viewManager = LinearLayoutManager(this)
         viewAdapter = MyAdapter(myDataset)
 
-        recyclerView = findViewById<RecyclerView>(R.id.my_recycler).apply {
+        recyclerView = findViewById<RecyclerView>(R.id.recycler).apply {
             layoutManager = viewManager
 
             adapter = viewAdapter
         }
     }
 
-    private fun createDataset() : List<String> {
-        val theList = mutableListOf<String>()
-        theList.add(getString(R.string.firstVal))
-        theList.add(getString(R.string.secondVal))
-        theList.add(getString(R.string.thirdVal))
-        theList.add(getString(R.string.fourthVal))
-        theList.add(getString(R.string.fifthVal))
-        theList.add(getString(R.string.sixthVal))
-        theList.add(getString(R.string.seventhVal))
-        theList.add(getString(R.string.eighthVal))
-        theList.add(getString(R.string.ninthVal))
+    private fun createDataset() : List<Vacas> {
+        val theList = mutableListOf<Vacas>()
 
+        // Fill with data
+        for (i in 0..30){
+            val vaca = Vacas(caravana = "A" + i, peso = i * 100)
+            theList.add(vaca)
+        }
         return theList
     }
 }
