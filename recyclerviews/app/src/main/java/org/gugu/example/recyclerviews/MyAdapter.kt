@@ -1,9 +1,11 @@
 package org.gugu.example.recyclerviews
 
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import android.view.ViewParent
 import android.widget.TextView
+import android.widget.Toast
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 
@@ -13,6 +15,12 @@ class MyAdapter(private val myDataset: List<Vacas>) : RecyclerView.Adapter<MyAda
         internal var caravana : TextView = itemView.findViewById<TextView>(R.id.caravana)
         internal var peso : TextView = itemView.findViewById<TextView>(R.id.peso)
 
+        init {
+            // Define item onClickListener
+            itemView.setOnClickListener {
+                Toast.makeText(it.context, "A seleccionado a la vaca: ${caravana.text}", Toast.LENGTH_LONG).show()
+            }
+        }
     }
 
     // Invoked by layout manager
