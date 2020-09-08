@@ -1,6 +1,7 @@
 package org.gugu.example.recyclerviews
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -16,13 +17,17 @@ class MainActivity : AppCompatActivity() {
 
         val myDataset = createDataset()
         viewManager = LinearLayoutManager(this)
-        viewAdapter = MyAdapter(myDataset)
+        viewAdapter = MyAdapter(myDataset, ::onItemClickFun)
 
         recyclerView = findViewById<RecyclerView>(R.id.recycler).apply {
             layoutManager = viewManager
 
             adapter = viewAdapter
         }
+    }
+
+    fun onItemClickFun(position: Int) : Unit {
+        Toast.makeText(baseContext, "A seleccionado la vaca en la posición ${position}", Toast.LENGTH_SHORT).show()
     }
 
     private fun createDataset() : List<Vacas> {

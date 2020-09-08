@@ -9,18 +9,12 @@ import android.widget.Toast
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 
-class MyAdapter(private val myDataset: List<Vacas>) : RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
+class MyAdapter(private val myDataset: List<Vacas>,
+                private val onItemClickListener: (position: Int) -> Unit) : RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
 
     class MyViewHolder(val itemView : CardView) : RecyclerView.ViewHolder(itemView) {
         internal var caravana : TextView = itemView.findViewById<TextView>(R.id.caravana)
         internal var peso : TextView = itemView.findViewById<TextView>(R.id.peso)
-
-        init {
-            // Define item onClickListener
-            itemView.setOnClickListener {
-                Toast.makeText(it.context, "A seleccionado a la vaca: ${caravana.text}", Toast.LENGTH_LONG).show()
-            }
-        }
     }
 
     // Invoked by layout manager
@@ -35,6 +29,11 @@ class MyAdapter(private val myDataset: List<Vacas>) : RecyclerView.Adapter<MyAda
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         holder.caravana.text = myDataset[position].caravana
         holder.peso.text = myDataset[position].peso.toString()
+
+        // TODO: Preguntar si puesto aca esta bien
+        holder.itemView.setOnClickListener {
+            onItemClickListener(position)
+        }
     }
 
     override fun getItemCount() = myDataset.size
