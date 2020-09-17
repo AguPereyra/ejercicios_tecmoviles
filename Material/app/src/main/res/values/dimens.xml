@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="login_padding">24dp</dimen>
+    <dimen name="login_padding_top">16dp</dimen>
+    <dimen name="login_image_width">64dp</dimen>
+    <dimen name="login_image_height">64dp</dimen>
+    <dimen name="login_image_margin_top">48dp</dimen>
+    <dimen name="login_image_margin_bottom">16dp</dimen>
+    <dimen name="login_text_margin_bottom">132dp</dimen>
+    <dimen name="title_size">16sp</dimen>
+    <dimen name="login_input_layout_margin">4dp</dimen>
+    <dimen name="cancel_button_margin">12dp</dimen>
+</resources>

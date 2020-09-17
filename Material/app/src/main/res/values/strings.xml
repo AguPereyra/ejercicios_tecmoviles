@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Material Test</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="helper_text_password">8-16 alphanumeric characters only</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_next">Next</string>
+    <string name="error_password">Password must be 8-16 chars</string>
+</resources>

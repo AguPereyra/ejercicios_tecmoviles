@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginFragment">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:padding="@dimen/login_padding"
+        android:paddingTop="@dimen/login_padding_top">
+
+        <ImageView
+            android:layout_width="@dimen/login_image_width"
+            android:layout_height="@dimen/login_image_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/login_image_margin_top"
+            android:layout_marginBottom="@dimen/login_image_margin_bottom"
+            android:src="@mipmap/app_image"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/login_image_margin_bottom"
+            android:text="@string/app_name"
+            android:textAllCaps="true"
+            android:textSize="@dimen/title_size"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/login_input_layout_margin"
+            android:hint="@string/hint_username">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password_text_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/login_input_layout_margin"
+            android:hint="@string/hint_password"
+            app:errorEnabled="true"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/next_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="@string/button_next"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/cancel_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/cancel_button_margin"
+                android:layout_marginRight="@dimen/cancel_button_margin"
+                android:layout_toStartOf="@+id/next_button"
+                android:text="@string/button_cancel"/>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
