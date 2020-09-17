@@ -1,11 +1,10 @@
 package org.example.fragments
 
 import android.os.Bundle
-import android.os.Parcel
-import android.os.Parcelable
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import androidx.fragment.app.Fragment
 
 class MyFragment() : Fragment() {
@@ -15,6 +14,17 @@ class MyFragment() : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_test, container, false) as View
+        val thisView = inflater.inflate(R.layout.fragment_test, container, false) as View
+        val listener = activity as FragmentListener
+        val nextButton = thisView.findViewById<Button>(R.id.fragment_next_button)
+
+        nextButton.setOnClickListener{
+            listener.navigateToNextFragment()
+        }
+        return thisView
+    }
+
+    interface FragmentListener {
+        fun navigateToNextFragment() : Unit
     }
 }

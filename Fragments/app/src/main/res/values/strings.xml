@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">Fragments</string>
     <string name="fragment_title">¡Bienvenidos al Fragmento!</string>
+    <string name="second_fragment_welcome">Este es el segundo fragmento, escribe algo...</string>
+    <string name="next_button">Siguiente</string>
 </resources>

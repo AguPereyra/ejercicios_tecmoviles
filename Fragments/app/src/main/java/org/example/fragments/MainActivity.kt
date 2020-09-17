@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.os.PersistableBundle
 import androidx.appcompat.app.AppCompatActivity
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), MyFragment.FragmentListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,4 +24,14 @@ class MainActivity : AppCompatActivity() {
         //4. Commit transaction
         fragmentTransaction.commit()
     }
+
+    override fun navigateToNextFragment() {
+        val fragmentTransaction = supportFragmentManager.beginTransaction()
+        val myFragment = MyFragment()
+        fragmentTransaction.addToBackStack(null)
+        fragmentTransaction.replace(R.id.dinamic_fragment, SecondFragment())
+        fragmentTransaction.commit()
+    }
+
+
 }
