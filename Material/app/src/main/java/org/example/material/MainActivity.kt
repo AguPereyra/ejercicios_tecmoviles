@@ -2,7 +2,9 @@ package org.example.material
 
 import android.os.Bundle
 import android.os.PersistableBundle
+import android.widget.FrameLayout
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.Fragment
 
 class MainActivity : AppCompatActivity(), LoginFragment.loginFragmentListener{
@@ -33,7 +35,7 @@ class MainActivity : AppCompatActivity(), LoginFragment.loginFragmentListener{
 
     override fun navigateToMainPage() {
         val fragmentTransaction = supportFragmentManager.beginTransaction()
-        val mainPageFragment = MainPageFragment()
+        val mainPageFragment = CattleListFragment()
         fragmentTransaction.replace(R.id.main_activity, mainPageFragment)
         fragmentTransaction.commit()
     }

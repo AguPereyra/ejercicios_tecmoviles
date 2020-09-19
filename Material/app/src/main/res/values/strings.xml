@@ -6,4 +6,8 @@
     <string name="button_cancel">Cancel</string>
     <string name="button_next">Next</string>
     <string name="error_password">Password must be 8-16 chars</string>
+    <string name="search_title">Search</string>
+    <string name="help_title">Help</string>
+    <string name="cattle_title">Caravan</string>
+    <string name="cattle_description">Moooo</string>
 </resources>
