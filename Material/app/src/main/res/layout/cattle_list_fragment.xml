@@ -12,7 +12,7 @@
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/app_bar"
-            style="@style/Widget.MaterialComponents.Toolbar.Primary"
+            style="@style/Widget.BrandStyle.Toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             app:navigationIcon="@drawable/ic_baseline_menu_48"
@@ -23,7 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="@dimen/cattle_list_margin_top"
-        android:background="@android:color/darker_gray"
+        android:background="@color/cattleGridBackgroundColor"
         android:paddingStart="@dimen/cattle_list_padding"
         android:paddingEnd="@dimen/cattle_list_padding"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">

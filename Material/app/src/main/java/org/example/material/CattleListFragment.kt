@@ -37,7 +37,6 @@ class CattleListFragment : Fragment() {
         // Adjust spacing between cards
         val largePadding = resources.getDimensionPixelSize(R.dimen.cattle_grid_spacing)
         val smallPadding = resources.getDimensionPixelSize(R.dimen.cattle_grid_spacing_small)
-        view.recycler_cattle_list.addItemDecoration(RecyclerView.ItemDecoration())
 
         return view
     }
