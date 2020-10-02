@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Networking</string>
+    <string name="generate_dog_btn">Obtener un perro</string>
+    <string name="no_internet_connection">¡Sin conexión a Internet!</string>
+</resources>
